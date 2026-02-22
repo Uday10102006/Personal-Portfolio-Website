@@ -1,0 +1,189 @@
+body{
+margin:0;
+font-family:Segoe UI;
+color:white;
+background:linear-gradient(270deg,#020617,#020617,#0b0120,#020617);
+background-size:400% 400%;
+animation:bgMove 15s infinite linear;
+overflow-x:hidden;
+}
+
+@keyframes bgMove{
+0%{background-position:0% 50%;}
+100%{background-position:100% 50%;}
+}
+
+/* GRID OVERLAY */
+.gridOverlay{
+position:fixed;
+width:100%;
+height:100%;
+background-image:
+linear-gradient(#22d3ee11 1px, transparent 1px),
+linear-gradient(90deg,#22d3ee11 1px, transparent 1px);
+background-size:40px 40px;
+pointer-events:none;
+z-index:-1;
+}
+
+header{
+text-align:center;
+padding:20px;
+position:sticky;
+top:0;
+background:#020617dd;
+backdrop-filter:blur(12px);
+}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:#22d3ee;
+font-weight:500;
+}
+
+nav a:hover{
+color:#a78bfa;
+text-shadow:0 0 12px #22d3ee;
+}
+
+.glow{
+text-shadow:0 0 25px #22d3ee;
+}
+
+.hero{
+text-align:center;
+padding:90px 20px 40px;
+max-width:800px;
+margin:auto;
+}
+
+.hero h2{
+font-size:45px;
+}
+
+.heroBtns{margin-top:25px;}
+
+.primaryBtn{
+background:linear-gradient(90deg,#22d3ee,#a78bfa);
+padding:12px 20px;
+border-radius:8px;
+text-decoration:none;
+color:black;
+margin-right:10px;
+}
+
+.outlineBtn{
+border:1px solid #22d3ee;
+padding:12px 20px;
+border-radius:8px;
+text-decoration:none;
+color:#22d3ee;
+}
+
+.glass{
+margin:40px auto;
+padding:30px;
+border-radius:16px;
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.08);
+max-width:900px;
+backdrop-filter:blur(12px);
+}
+
+.card{
+display:block;
+text-decoration:none;
+color:white;
+border:1px solid #22d3ee55;
+padding:22px;
+margin-top:15px;
+border-radius:14px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px) scale(1.02);
+box-shadow:0 0 30px #22d3ee55;
+}
+
+.skill{margin:18px 0;}
+
+.bar{
+background:#020617;
+height:10px;
+border-radius:10px;
+overflow:hidden;
+}
+
+.bar span{
+display:block;
+height:10px;
+width:0;
+background:linear-gradient(90deg,#22d3ee,#a78bfa);
+border-radius:10px;
+transition:1.2s ease;
+}
+
+form{
+display:flex;
+flex-direction:column;
+max-width:400px;
+}
+
+input,textarea{
+margin:10px 0;
+padding:12px;
+border:none;
+border-radius:6px;
+background:#020617;
+color:white;
+}
+
+button{
+background:linear-gradient(90deg,#22d3ee,#a78bfa);
+border:none;
+padding:12px;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+}
+
+footer{
+text-align:center;
+padding:30px;
+margin-top:50px;
+background:#020617;
+}
+
+.socials a{
+font-size:22px;
+color:#22d3ee;
+margin:0 8px;
+}
+
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:0.6s;
+}
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+/* CURSOR GLOW */
+.cursorGlow{
+position:fixed;
+width:250px;
+height:250px;
+background:radial-gradient(circle,#22d3ee22,transparent);
+pointer-events:none;
+border-radius:50%;
+transform:translate(-50%,-50%);
+}
+
+/* MAGNETIC BUTTON EFFECT */
+.magnetic{
+transition:transform .2s ease;
+}
