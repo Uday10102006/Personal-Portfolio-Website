@@ -73,4 +73,14 @@ const y=e.clientY-rect.top-rect.height/2;
 btn.style.transform=`translate(${x*0.2}px,${y*0.2}px)`;
 });
 btn.addEventListener("mouseleave",()=>btn.style.transform="translate(0,0)");
+
+});
+
+// ===== GOD MODE LOADER REMOVE =====
+window.addEventListener("load",()=>{
+    const loader=document.getElementById("loader");
+
+    setTimeout(()=>{
+        loader.style.display="none";
+    },3000); // 3 seconds
 });
